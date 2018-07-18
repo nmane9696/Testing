@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>Saba</groupId>
-  <artifactId>NMProject</artifactId>
+  <artifactId>Saba.Test.PTR</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
