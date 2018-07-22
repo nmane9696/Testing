@@ -22,4 +22,38 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <createDependencyReducedPom>false</createDependencyReducedPom>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  <distributionManagement>
+    <repository>
+        <id>myMavenrepo.write</id>
+        <url>https://mymavenrepo.com/repo/9LnJ9OzW9hSugfOBzJ1b/</url>
+    </repository>
+</distributionManagement> 
+
+<repositories>
+    <repository>
+        <id>myMavenrepo.read</id>
+        <url>https://mymavenrepo.com/repo/Kih5LcBfcJRHocFhR8oU/</url>
+    </repository>
+</repositories>
 </project>
